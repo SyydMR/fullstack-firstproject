@@ -12,7 +12,3 @@ function showList() {
 function showField() {
   searchField.classList.toggle("show");
 }
-
-function change_loc(url) {
-  document.location.href = url;
-}
