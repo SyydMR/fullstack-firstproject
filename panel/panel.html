@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media-queries.css" />
-    <title>Panel Managment</title>
+    <link href='./font/edit_icon.css' rel='stylesheet'>
+    <title>Panel</title>
 </head>
 
 <body spellcheck="false">
@@ -97,7 +98,8 @@
             <div class="panel-head">
                 <div class="panel-title">
                     <h3>Panel <span>Managment</span></h3>
-                    <p>In this page you can find information about your previous travels and current tickets. You can also change your information and profile.</p>
+                    <p>In this page you can find information about your previous travels and current tickets. You can
+                        also change your information and profile.</p>
                 </div>
             </div>
 
@@ -109,9 +111,67 @@
 
 
 
-            <label for="personal">Personal</label>
+            <h2>Personal</h2>
             <div class="personal-panel-box panel-box" id="personal">
+                <form action="#" method="post" class="form">
+                    <div class="grid-container">
+                        <div class="inp-box">
+                            <p>first name: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="text" class="personal-input">
+                                <button class="personal-btn">
+                                    <i class="gg-pen gg-personal"></i>
+                                </button>
+                            </div>
+                        </div>
 
+
+                        <div class="inp-box">
+                            <p>last name: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="text" class="personal-input">
+                                <button class="personal-btn">
+                                    <i class="gg-pen gg-personal"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="inp-box">
+                            <p>phone: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="tel" class="personal-input">
+                                <button class="personal-btn">
+                                    <i class="gg-pen gg-personal"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="inp-box">
+                            <p>email: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="email" class="personal-input">
+                                <button class="personal-btn">
+                                    <i class="gg-pen gg-personal"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="inp-box date-inp">
+                            <p>birthday: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="date" class="personal-input">
+                                <button class="personal-btn">
+                                    <i class="gg-pen gg-personal"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input type="submit" class="submit-personal submit-btn" value="apply change">
+
+
+                </form>
 
 
 
@@ -134,8 +194,68 @@
 
 
 
-            <label for="traveled">Travel</label>
-            <div class="traveled-panel-box panel-box" id="traveled">
+            <h2>Travel</h2>
+            <div class="traveled-panel-box panel-box" id="personal">
+                <form action="#" method="post" class="form">
+                    <div class="travel-grid-container">
+                        <div class="inp-box item1">
+                            <p>favorite location: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="text" class="personal-input inp-loc">
+                                <button class="travel-btn">
+                                    <i class="gg-pen gg-travel"></i>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="inp-box item2">
+                            <p>last name: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="text" class="personal-input">
+                                <button class="travel-btn">
+                                    <i class="gg-pen gg-travel"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="inp-box item3">
+                            <p>phone: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="tel" class="personal-input">
+                                <button class="travel-btn">
+                                    <i class="gg-pen gg-travel"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="inp-box item4">
+                            <p>email: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="email" class="personal-input">
+                                <button class="travel-btn">
+                                    <i class="gg-pen gg-travel"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="inp-box date-inp item5">
+                            <p>birthday: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="date" class="personal-input">
+                                <button class="travel-btn">
+                                    <i class="gg-pen gg-travel"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <input type="submit" class="submit-travel submit-btn" value="apply change">
+
+
+                </form>
 
 
 
@@ -162,16 +282,64 @@
 
 
 
+            <h2>Security</h2>
+            <div class="security-panel-box  panel-box" id="personal">
+                <form action="#" method="post" class="form">
+                    <div class="grid-container">
+                        <div class="inp-box">
+                            <p>username: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="text" class="personal-input">
+                                <button class="security-btn">
+                                    <i class="gg-pen gg-security"></i>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="inp-box">
+                            <p>old password: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="password" class="personal-input">
+                            </div>
+                        </div>
+
+                        <div class="inp-box">
+                            <p>new password: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="password" class="personal-input">
+                                <button class="security-btn">
+                                    <i class="gg-pen gg-security"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="inp-box">
+                            <p>confirm: </p>
+                            <div class="personal-inp-box form-inp">
+                                <input type="password" class="personal-input">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <input type="submit" class="submit-security submit-btn" value="apply change">
+
+
+                </form>
 
 
 
 
 
 
-            <label for="security">Security</label>
-            <div class="security-panel-box panel-box" id="security">
+
 
             </div>
+
+
 
         </div>
 

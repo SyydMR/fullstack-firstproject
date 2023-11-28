@@ -327,29 +327,28 @@ a {
   width: 1400px;
 }
 
-.panel-box{
-  border-radius: 10px;
+.panel-box {
   margin-bottom: 70px;
-  width: 1400px;
-  border: 1px solid rgba(214, 214, 214, 0.637);
-  height: 300px;
 }
 
 /* personal panel */
 .personal-panel-box {
-  padding: 0;
+  padding: 20px;
+  border-top: 1px solid var(--darkBlue);
 }
 
 /* traveled panel */
 .traveled-panel-box {
-  padding: 0;
+  padding: 20px;
+  border-top: 1px solid var(--darkBlue);
 }
 
 /* security panel */
 .security-panel-box {
-  padding: 0;
+  padding: 20px;
+  border-top: 1px solid var(--darkBlue);
 }
-.panel-container > label {
+.panel-container > h2 {
   font-size: 40px;
   margin-bottom: 10px;
   font-family: "Nunito";
@@ -373,6 +372,134 @@ a {
   margin-top: 50px;
   font-size: 30px;
 }
-.panel-title > h3 > span{
+.panel-title > h3 > span {
   color: var(--lightBlue);
+}
+
+/* personal inputs */
+.personal-inp-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.personal-btn {
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid var(--darkBlue);
+  padding: 20px;
+  cursor: pointer;
+}
+.travel-btn {
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid var(--lightBlue);
+  padding: 20px;
+  cursor: pointer;
+}
+.security-btn {
+  border: none;
+  outline: none;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid var(--red);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.personal-input {
+  border: none;
+  border-bottom: 1px solid rgba(214, 214, 214, 0.637);
+  outline: none;
+  margin: 0 30px;
+  font-size: 24px;
+  font-family: "PrincessSofiaBold";
+  padding: 10px 5px;
+}
+.inp-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inp-box > p {
+  font-size: 28px;
+  font-family: "Nunito";
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  padding: 20px;
+  column-gap: 120px;
+  row-gap: 40px;
+}
+.personal-btn > .gg-pen {
+  color: var(--darkBlue);
+}
+.security-btn > .gg-pen {
+  color: var(--red);
+}
+.travel-btn > .gg-pen {
+  color: var(--lightBlue);
+}
+.personal-btn:hover .gg-personal {
+  transform: rotate(0deg);
+  transform: scale(1.5);
+}
+.travel-btn:hover .gg-travel {
+  transform: rotate(0deg);
+  transform: scale(1.5);
+}
+.security-btn:hover .gg-security {
+  transform: rotate(0deg);
+  transform: scale(1.5);
+}
+.submit-personal {
+  background-color: rgba(20, 26, 46, 0.1);
+}
+.submit-travel {
+  background-color: rgba(34, 200, 206, 0.2);
+}
+.submit-security {
+  background-color: #df3e3e30;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.submit-btn{
+  padding: 20px 50px;
+  border: none;
+  font-size: 28px;
+  font-family: "Nunito";
+  border-radius: 7px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.travel-grid-container {
+  display: grid;
+  text-align: center;
+  padding: 20px;
+  column-gap: 120px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  grid-template-areas:
+  'header header header header'
+  'menu menu main main '
+  'right right footer footer ';
+}
+.item1 { grid-area: header;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.inp-loc{
+  width: 850px;
 }
