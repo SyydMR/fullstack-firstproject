@@ -329,6 +329,7 @@ a {
 
 .panel-box {
   margin-bottom: 70px;
+  width: 1300px;
 }
 
 /* personal panel */
@@ -432,8 +433,16 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   text-align: center;
+  justify-content: center;
   padding: 20px;
-  column-gap: 120px;
+  column-gap: 190px;
+  row-gap: 40px;
+}
+.security-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+  column-gap: 130px;
   row-gap: 40px;
 }
 .personal-btn > .gg-pen {
@@ -465,6 +474,27 @@ a {
 }
 .submit-security {
   background-color: #df3e3e30;
+}
+.submit-personal:hover {
+  background-color: rgba(20, 26, 46, 0.3);
+}
+.submit-travel:hover {
+  background-color: rgba(34, 200, 206, 0.4);
+}
+.submit-security:hover {
+  background-color: #df3e3e56;
+}
+.submit-personal:active {
+  background-color: rgb(20, 26, 46);
+  color: #ffffff;
+}
+.submit-travel:active {
+  background-color: rgb(20, 26, 46);
+  color: #ffffff;
+}
+.submit-security:active {
+  background-color: rgb(20, 26, 46);
+  color: #ffffff;
 }
 .form {
   display: flex;
