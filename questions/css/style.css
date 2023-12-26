@@ -6,6 +6,7 @@
   font-family: "PrincessSofia";
   src: url("../font/PrincessSofia-Regular.ttf");
 }
+
 @font-face {
   font-family: "PrincessSofiaBold";
   src: url("../font/Nunito-Bold.ttf");
@@ -160,8 +161,10 @@ a {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .logo-header {
@@ -255,7 +258,6 @@ a {
 /* footer */
 
 .footer {
-  background-color: var(--darkBlue);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -263,9 +265,13 @@ a {
   width: 100%;
   flex: 1;
   z-index: 1;
+  margin: 0 auto;
+  max-width: 1400px;
   margin-top: 10px;
 }
-
+.background-footer {
+  background-color: var(--darkBlue);
+}
 .footer-logo {
   width: 170px;
   margin-bottom: 10px;
@@ -304,253 +310,173 @@ a {
   line-height: 20px;
 }
 
-.sign-box {
-  width: 100%;
+/* ask questions part */
+
+.ques-box {
+  max-width: 1400px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
-  flex: 4;
-  z-index: 1;
-  direction: rtl;
-  font-family: "koodak";
-  margin: 150px 0;
-}
-.login-text {
-  margin-bottom: 15px;
-  font-size: 50px;
-  font-family: Nunito;
-}
-
-.in-in-login {
-  opacity: 80%;
-  color: var(--lightBlue);
-}
-.login-box {
-  padding: 20px 20px;
-}
-
-.login {
-  display: flex;
   flex-direction: column;
-}
-
-.log-inp {
   margin: 0 auto;
-  font-size: 17px;
-  outline: none;
-  direction: ltr;
 }
 
-.flex-con {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.ques-box > h2 {
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: 35px;
 }
-.new-acc {
-  display: flex;
-  font-size: 15px;
-}
-.new-acc > a {
-  margin-right: 10px;
-  font-size: 13px;
-}
-.login-box > a {
-  font-size: 15px;
-}
-.submit {
-  font-family: "koodak";
-  padding: 5px 106px;
-  border: none;
-  background-color: var(--lightBlue);
-  opacity: 80%;
-  color: #fff;
-  margin-bottom: 10px;
-  transition: opacity 0.5s;
-}
-.submit:hover {
-  opacity: 100%;
-}
-.submit:active {
-  opacity: 80%;
-  background-color: var(--darkBlue);
-}
-.pass {
-  border: none;
-  border-bottom: 1px solid #00000067;
-  padding: 7px 13px;
-  margin-bottom: 40px;
-}
-
-.mail {
-  border: none;
-  border-bottom: 1px solid #00000067;
-  padding: 7px 13px;
-}
-.password-lbl {
-  margin-top: 12px;
-}
-
-.line-under-login {
-  position: relative;
-  padding-bottom: 20px;
-  /*--------------------------------*/
+.ques-box > p {
+  text-align: center;
+  font-family: "Nunito";
   font-weight: 700;
-  width: 280px;
-  /*وزن متن را تعیین میکند مثلا متنو بولد میکند*/
-  /*-----------------------------------*/
+  font-size: 20px;
+  margin-top: 35px;
+  color: rgba(105, 105, 105, 1);
+  max-width: 893px;
+  margin-bottom: 49px;
 }
 
-.line-under-login:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #00000067;
-}
-
-.line-under-login:before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 120px;
-  height: 5px;
-  background: var(--darkBlue);
-  z-index: 1;
-  opacity: 80%;
-}
-input{
-  font-family: "PrincessSofiaBold";
-  font-weight: 800;
-  width: 250px;
-}
-.line-under-input {
+.comment-img-info {
+  width: 279.52px;
+  height: 238.07px;
   position: relative;
-  padding-bottom: 20px;
-  width: 280px;
-  margin: 20px 0;
-  /*--------------------------------*/
-  font-weight: 700;
-  /*وزن متن را تعیین میکند مثلا متنو بولد میکند*/
-  /*-----------------------------------*/
 }
-
-.line-under-input:after {
+.circle {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #00000067;
+  border-radius: 100%;
+  background-color: rgba(194, 194, 194, 1);
 }
-
-.line-under-input:before {
+.cir1 {
+  width: 49.16px;
+  height: 49.16px;
+  top: 8.67px;
+  right: 65.54px;
+}
+.cir2 {
+  width: 57.83px;
+  height: 57.83px;
+  right: 7.71px;
+  bottom: 8.67px;
+}
+.cir3 {
+  width: 49.16px;
+  height: 49.16px;
+  bottom: 88.67px;
+  right: 238.07px;
+}
+.comment-img-info > img {
+  width: 161px;
+  height: 161px;
+  border-radius: 17px;
+  z-index: 1000;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  content: "";
-  width: 120px;
-  height: 5px;
-  background: var(--lightBlue);
-  z-index: 1;
+  top: 30px;
+  right: 55px;
 }
 
-:root {
-  --primary-color: #111;
-  --secondary-color: #a8adb3;
-}
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-
-.container-tab {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5px;
-}
-
-.tabs {
-  display: flex;
-  position: relative;
+.white-circle {
+  width: 4.5rem;
+  height: 2rem;
   background-color: #fff;
-  padding: 0;
-  border: 1px solid rgba(205, 205, 205, 0.518);
-  border-radius: 10px;
 }
-
-.tabs * {
-  z-index: 2;
+.w-circle-1 {
+  margin-top: -0.5rem;
+  border-radius: 0 0 2rem 2rem;
 }
-
-input[type="radio"] {
-  display: none;
+.w-circle-2 {
+  margin-bottom: -0.5rem;
+  border-radius: 2rem 2rem 0 0;
 }
-
-.tab {
+.line-between {
+  border: 2px dashed rgba(208, 208, 208, 1);
+  height: 100%;
+  width: 0;
+}
+.comment-line-between {
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 20px;
-  width: 60px;
-  font-size: 13px;
-  font-weight: 500;
-  border-radius: 99px;
-  cursor: pointer;
-  transition: color 0.15s ease-in;
 }
-
-.notification {
+.comment-origin {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-  border-radius: 50%;
-  background-color: var(--secondary-color);
-  transition: 0.15s ease-in;
+  background-color: rgba(238, 238, 238, 1);
+  border-radius: 17px;
+  width: 1200px;
+  justify-content: space-between;
+  margin-bottom: 21.58px;
 }
-
-input[type="radio"]:checked + label {
-  color: var(--primary-color);
+.comment-text {
+  padding-top: 22.17px;
+  padding-left: 34.7px;
+  padding-bottom: 12.42px;
 }
-
-input[type="radio"]:checked + label > .notification {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-input[id="radio-1"]:checked ~ .glider {
-  transform: translateX(0);
-}
-
-input[id="radio-2"]:checked ~ .glider {
-  transform: translate(-100%);
-}
-.glider {
+.last-name {
   position: absolute;
-  display: flex;
-  height: 20px;
-  width: 60px;
-  background-color: var(--lightBlue);
-  opacity: 40%;
-  z-index: 1;
-  border-radius: 10px;
-  transition: 0.25s ease-out;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 26px;
+  bottom: 7.42px;
+  right: 83px;
 }
 
-
-.login-boxes{
+.first-name {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 26px;
+}
+.comment-discrption {
+  color: rgba(155, 155, 155, 1);
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 31px;
+  max-width: 608px;
+}
+.options-comment {
+  margin-top: 24px;
   display: flex;
-  flex-direction: row;
+}
+.last-part-comment {
+  display: flex;
+}
+.options-comment > form > input[type="text"] {
+  width: 537px;
+  padding: 9px 15px;
+  border-radius: 13px;
+  outline: none;
+  border: 1px solid rgba(105, 105, 105, 1);
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 15px;
+}
+.options-comment > form > input[type="submit"] {
+  padding: 9px 15px;
+  background-color: rgba(105, 105, 105, 1);
+  outline: none;
+  color: #fff;
+  border-radius: 13px;
+  width: 125px;
+  height: 45px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0 7px;
+}
+.options-comment > button {
+  padding: 9px 15px;
+  background-color: transparent;
+  border: 1px solid rgba(105, 105, 105, 1);
+  border-radius: 13px;
+  color: rgba(105, 105, 105, 1);
+  height: 45px;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 17px;
+}
+.sub-comment {
+  margin-bottom: 21.58px;
 }
