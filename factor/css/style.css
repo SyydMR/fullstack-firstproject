@@ -270,6 +270,7 @@ a {
 }
 .background-footer {
   background-color: var(--darkBlue);
+  margin-top: 300px;
 }
 .footer-logo {
   width: 170px;
@@ -327,7 +328,7 @@ a {
 }
 
 .factor-box {
-  height: 600px;
+  height: 900px;
   background-color: #d3f4f5;
   border-radius: 24px;
   width: 100%;
@@ -358,6 +359,7 @@ a {
   display: flex;
   padding: 30px;
   padding-bottom: 0;
+  padding-right: 60px;
   justify-content: space-between;
 }
 .header-factor > .img-box {
@@ -392,7 +394,58 @@ a {
   margin-right: -110px;
 }
 .factor-body {
-  background-image: url(../img/zamin-img.png);
+  background: url(../img/zamin-img.png) center bottom/cover repeat padding-box;
   width: 100%;
-  height: 100%;
+  height: 620px;
+  border-radius: 24px;
+}
+.parent-details{
+  margin-top: 20px;
+  display: flex;
+}
+.parent-details > div > h6 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Nunito';
+}
+.parent-details > div > p {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Nunito';
+  color: #696969;
+}
+.parent-name{
+  margin-right: 40px;
+}
+.price-d > h4{
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Nunito';
+}
+.price-d > p{
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Nunito';
+  color: #696969;
+}
+.p-date > h4{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Nunito';
+}
+.p-date > p{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Nunito';
+  color: #696969;
+}
+.factor-header-price-date{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.factor-header-price-date > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
